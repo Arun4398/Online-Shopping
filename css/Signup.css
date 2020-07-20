@@ -1,0 +1,128 @@
+body
+{
+     background-image: url(back.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: 'Josefin Sans', sans-serif; 
+     max-width:auto;
+}
+form
+{
+   margin-top:110px;
+   margin-left:400px;
+   margin-right:400px;
+   padding:50px;
+   border-radius: 10px;
+   border:3px solid white;
+   box-shadow: 1px 1px 4px black;
+   background-size: cover;
+   background-color: whitesmoke;
+   box-sizing: border-box;
+   position: relative;
+}
+abbr
+{
+    text-decoration: none;
+}
+.close a
+{
+    margin-left:400px;
+    text-decoration:none;
+    font-size:20px;
+    box-sizing: border-box;
+    color:black;
+    padding-top:3px;
+}
+.close a:hover
+{
+    color:red;
+}
+.title
+{
+    font-size:20px;
+    text-align: center;
+    font-weight: 900;
+    margin-right:8%;
+}
+.fa-user-circle
+{
+    position: relative;
+    top:0;
+    left:100px;
+}
+.fa-envelope-o
+{
+    position: relative;
+    top:0;
+    left:100px;
+}
+.fa-lock
+{
+    position:relative;
+    top:5px;
+    left:105px;
+}
+input
+{
+    outline:0px;
+    border: none;
+    font-size:15px;
+    font-weight: 600;
+    padding:5px 30px 5px 0px;
+    margin-top:20px;
+    margin-left:115px;  
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+}
+.Rem input
+{
+    margin-top:20px;
+
+}
+.login a
+{
+    position: absolute;
+    margin-top:30px;
+    border:2px solid tan;
+    margin-left:160px;
+    font-family: cursive;
+    background-size:cover;
+    font-weight: 400;
+    border-radius: 20px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-right:30px;
+    padding-left:30PX;
+    font-size:20px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login a:hover
+{
+    background-image:linear-gradient(to left,red,yellow);
+    background-repeat: no-repeat;
+}
+.tex
+{
+    position: relative;
+    top: 50px;
+    left:165px;
+}
+
+.img-g
+{
+ margin-left:160px;
+}
+.img-f
+{
+    margin-left:40px;
+     position: relative;
+     top:5px;
+}
+.fp
+{
+    margin-top:10px;
+    text-align: center;
+}

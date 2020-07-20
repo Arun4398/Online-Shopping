@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+body
+{
+    max-width:auto;
+    background-color: #f7f7f7;
+    position: relative;
+}
+.Top-bar
+{
+    position:static;
+    top:0;
+    background-color: #ff0040;
+    width:100%;
+    height:28px;
+    margin-top:0;
+}
+.Top-bar span
+{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600; 
+    padding-left:50px;
+    font-size:14px;
+    letter-spacing:1.5px;
+}
+nav
+{ 
+    position: absolute;
+    top:0px;
+    left:800px;
+
+} 	
+nav .Top-item
+{ 
+	text-align:left; 
+    background:transparent; 
+    font-size:12px;
+} 
+nav .Top-bar-list
+{ 
+    display:inline-block; 
+    padding-left:20px;
+} 
+nav a
+{ 
+	display:inline-block; 
+	padding-top:0px; 
+	text-decoration: none; 
+	font-weight:400; 
+    color:white;
+    letter-spacing:1.5px;
+    font-family: 'PT Sans', sans-serif;
+} 
+nav a:hover
+{
+    border-bottom: 2px solid black
+}
+.close a
+{
+    float: right;
+    text-decoration:none;
+    font-size:20px;
+}
+.close a:hover
+{
+    color: red;
+}
+.payment-title
+{
+    margin-top:100px;
+}
+.main
+{
+    margin-left:50px;
+    margin-right:50px;
+}
+.payment-options
+{
+   margin-top:30px;
+   border: 1px solid black;
+   padding:10px;
+   position: relative;
+}
+.payment-options img
+{
+    position: absolute;
+    top:150px;
+    left:745px;
+}
+.payment-options #Name
+{
+    padding: 3px 28px 3px 0px;
+    margin-top:20px;
+    font-size:20px;
+}
+.payment-options #btn1
+{
+    padding: 8px ;
+    margin-left:150px;
+}
+.popup
+{
+    margin-top:20px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.net
+{
+    margin-top:20px ;
+}
+#sele
+{
+    padding:5px;
+    margin-top:10px;
+    margin-left:20px;
+}
+.btn-2
+{
+    padding:10px;
+    font-size:20px;
+    margin-left:550px;
+}
+input:focus
+{
+    background-color: rgb(235, 241, 148);
+}
+.btn-2 a
+{
+    text-decoration:none;
+    color: black;
+}

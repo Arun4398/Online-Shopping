@@ -1,0 +1,550 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+body
+{
+    max-width:auto;
+    background-color: #f7f7f7;
+}
+.Top-bar
+{
+    position:static;
+    top:0;
+    background-color: #ff0040;
+    width:100%;
+    height:28px;
+    margin-top:0;
+    margin-bottom:0;
+}
+.Top-bar span
+{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600; 
+    padding-left:50px;
+    font-size:14px;
+    letter-spacing:1.5px;
+}
+nav
+{ 
+    position: absolute;
+    top:0px;
+    left:800px;
+
+} 	
+nav .Top-item
+{ 
+	text-align:left; 
+    background:transparent; 
+    font-size:12px;
+} 
+nav .Top-bar-list
+{ 
+    display:inline-block; 
+    padding-left:20px;
+} 
+nav a
+{ 
+	display:inline-block; 
+	padding-top:0px; 
+	text-decoration:none;
+	font-weight:400;  
+    color:white;
+    letter-spacing:1.5px;
+    font-family: 'PT Sans', sans-serif;
+}
+nav a:hover
+{
+    border-bottom: 2px solid white;
+}
+.nav-bar
+{
+    position:sticky;
+    top:0;
+    background-color: #e40046;
+    width:100%;
+    height:60px;
+    margin-top:0;
+    margin-bottom:0;
+    z-index:99999;
+}
+#logoimg
+{
+    position: absolute;
+    left:50px;
+}
+#logoname
+{
+   
+    position: absolute;
+    left:110px;
+    top:12px;
+    font-size:30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#logoname a
+{
+    text-decoration: none;
+    color:white;
+}
+#search-input input
+{
+    position: absolute;
+    left:300px;
+    top:10px;
+    padding: 10px 340px 10px 0px ;
+    font-size:15px;
+    outline-width:0px;
+    border:none;
+}
+#Searchbtn a
+{
+    text-decoration: none;
+    position: absolute;
+    left:830px;
+    top:10px;
+    color:white;
+    border:1px solid #333333;
+    padding: 8px 13px;
+    background-color: #333333 ;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    cursor: pointer;
+}
+.nav-bar #cart
+{
+    text-decoration: none;
+    position: absolute;
+    left:990px;
+    top:20px;
+    color:white;
+    font-size:20px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#cart:hover
+{
+    color: #333333;
+}
+#signin a
+{
+    text-decoration: none;
+    position: absolute;
+    left:1085px;
+    top:20px;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#signin a:hover
+{
+   color: #333333;
+}
+#Login a
+{
+    text-decoration: none;
+    position: absolute;
+    left:1215px;
+    top:20px;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#Login a:hover
+{
+   color: #333333;
+}
+.main
+{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    position: relative;
+}
+.sildebar
+{
+    width:20%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 3px;
+}
+.sildebar .par-1
+{
+    padding-top:15px;
+    margin-right:60px;
+    border-bottom: 2px solid #e40046;
+    box-sizing: border-box;
+}
+.sildebar .par-2
+{
+    margin-right:60px;
+    border-bottom: 2px solid #e40046;
+    box-sizing: border-box;
+}
+.sildebar a
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding:10px;
+}
+.sildebar a:hover
+{
+    border-left: 2px solid #e40046;
+}
+.scrl
+{
+
+    width:60%;
+    background-image: url(ani.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid white;
+    padding-top:300px;
+    padding-left:200px;
+    position: absolute;
+    top:0px;
+    left:21%;
+    animation-name: srclimg;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 2px 5px black;
+    transition: all .3s;
+}
+@keyframes srclimg
+{
+ 20%
+ {
+    background-image: url(ani1.jpg);}
+ 40%
+ {
+     background-image: url(ani2.jpg);}
+ 60%
+ {
+     background-image: url(ani3.jpg);}
+}
+.img-nav
+{
+    display:inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    position: absolute;
+    top:300px;
+    left:21%;
+    width:60%;
+    animation-name:img-nav;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.img-nav li
+{
+    display: inline;
+    padding-left:30px;  
+} 
+.img-nav li a
+{
+    text-decoration: none;
+    color: #333333;
+}
+.img-nav li a:hover
+{
+    border-bottom: 2px solid black;
+}
+#HR
+{
+    width:20%;
+    height:5px;
+    background-color: black;
+    animation-name:hr;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+@keyframes hr
+{
+    20%{ width:40%;}
+    40%{ width:60%;}
+    60%{ width:85%;}
+}
+.right-bar
+{
+width:240px;
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+background-color: white;
+border-radius: 8px;
+position: absolute;
+top:0px;
+right:0px;
+box-sizing: border-box;
+}
+#bar-img img
+{
+     height:200px;
+     width:220px;
+}
+#bar-text
+{
+    text-align: center;
+}
+.right-bar input
+{
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:15px;
+    padding: 9px 50px 9px 3px;
+    outline: 0;
+}
+.right-bar button
+{
+    margin-top:25px;
+    margin-left:80px;
+    margin-bottom:20px;
+    padding:7px;
+    font-size:16px;
+    background-color: #333333;
+    outline: 0;
+    color: white;
+}
+.product-title
+{
+    position: absolute;
+    left:270px;
+    top:400px;
+    font-size:30px;
+}
+.products
+{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    border-radius:5px;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: space-around;
+    background-color: white;
+}
+.products .product1
+{
+background-color: white;
+border-radius:5px;
+box-sizing: border-box;
+padding:30PX;
+}
+
+.product1:hover
+{
+    box-shadow: 1px 1px 10px black;
+}
+.products .product2
+{
+background-color: white;
+border-radius:5px;
+box-sizing: border-box;
+padding:30PX;
+padding-left:35PX;
+}
+.product2:hover
+{
+    box-shadow: 1px 1px 10px black;
+}
+
+.products .product3
+{
+width:22%;
+background-color: white;
+border-radius:5px;
+box-sizing: border-box;
+padding:30PX;
+}
+.product3:hover
+{
+    box-shadow: 1px 1px 10px black;
+}
+.products .product4
+{
+    background-color: white;
+    border-radius:5px;
+    box-sizing: border-box;
+    padding:30PX;
+    padding-left:35PX;
+}
+.product4:hover
+{
+    box-shadow: 1px 1px 10px black;
+}
+.adv
+{
+    margin-top:50px;
+    display: flex;
+    margin-bottom:50px;
+    width:100%;
+    height:325px;
+   
+}
+.adv-i img
+{
+    margin-left:30px;
+    border-radius:8px;
+    overflow: hidden;
+    width:90%;
+    height:325px;
+    box-shadow: 2px 2px 3px black;
+    transition-duration:.4s;
+}
+.adv-i img:hover
+{
+    opacity:0.8;
+    
+}
+
+.app-page
+{
+    width:100%;
+    height:420px;
+    background-color:white;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+#mob
+{
+    width:350px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+#green
+{
+    position: absolute;
+    top:0;
+    right:0;
+    
+}
+.app-text
+{
+    font-size:35px;
+    margin-left:600px;
+    margin-top:100px;
+}
+.app-text span
+{
+    font-size:20px;
+    font-weight:300px;
+}
+
+
+.app-text a:link,
+.app-text a:visited
+{
+    text-decoration: none;
+}
+
+.img {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 140px;
+}
+
+.footer {
+    padding: 10px 10px 0 10px;
+    margin-top:30px;
+    background-color:#777;
+    color: white;
+
+}
+.info
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info p
+{
+    line-height:1.5;
+}
+.info-5 input
+{
+    outline: none;
+    padding: 5px 30px 5px 0px;
+}
+.info-5 button
+{
+    margin-top:10px;
+    padding: 3px;
+    margin-left:40px;
+}
+
+.icons {
+    text-align: center;
+}
+
+.pad {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.media:link,
+.media:visited {
+    text-decoration: none;
+    color:whitesmoke;
+    transition:  all 0.5s;
+
+}
+.media .f:hover,
+.media .f:active {
+    color:rgb(37, 37, 255);
+}
+.media .g:hover,
+.media .g:active {
+    color:yellow;
+}
+.media .in:hover,
+.media .in:active {
+    color:rgb(255, 0, 221);
+}
+.media .t:hover,
+.media .t:active {
+    color:rgb(29, 118, 250);
+}
+.media .y:hover,
+.media .y:active {
+    color:red;
+}
+.copyright
+{
+    font-size: 13px;
+}
+.copyright::after{
+    content: "";
+    clear: both;
+    display : table;
+}
+
+.cpy-1
+{
+ float: left;
+}
+.cpy-2
+{
+    float: right;
+}
+
+.heart {
+    font-size: 20px;
+    color: red;
+    margin-right: 10px;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+

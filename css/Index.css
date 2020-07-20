@@ -317,7 +317,7 @@ box-sizing: border-box;
 .product-title
 {
     position: absolute;
-    left:270px;
+    left:21%;
     top:400px;
     font-size:30px;
 }

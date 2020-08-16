@@ -83,6 +83,10 @@ nav a:hover
    border: 1px solid black;
    padding:10px;
    position: relative;
+   background-image: url("background-banking-banknote-bill-wallpaper-preview.jpg");
+   background-size: cover;
+   background-repeat:no-repeat;
+   color:black
 }
 .payment-options img
 {

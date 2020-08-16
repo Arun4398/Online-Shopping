@@ -7,16 +7,17 @@
     <link href="images/Logo.jpg" rel="icon">
     <link href="css/Product.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="Top-bar">
-        <span>India's Fastest Online Shopping Destination<span>
+        <span><abbr title="Home" style="text-decoration: none;"><a href="index.html" style="text-decoration: none; color: white;">India's Fastest Online Shopping Destination</a></abbr><span>
         <nav>
         <ul class="Top-item">
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Gift Cards</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Help Center</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Sell On Shop Stop</a></li>
+            <li class="Top-bar-list"><a id="Top-bar-link" href="#foo">Help Center</a></li>
+            <li class="Top-bar-list"><a id="Top-bar-link" href="Products.html">Sell On Shop Stop</a></li>
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Download App</a></li>     
         </ul>   
         </nav>
@@ -26,7 +27,7 @@
          <span id="logoname"><a href="index.html">Shop Stop</a></span>
          <span id="search-input"><input type="text" placeholder="Search product & brands"></span>
          <span id="Searchbtn"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Search</a></span>
-         <span id="cart">Cart&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+         <span id="cart" onclick="cart()">Cart&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
          <span id="signin"><a href="Signup.html">Sign Up&nbsp;<i class="fa fa-user-plus" aria-hidden="true"></i></a></span>
          <span id="Login"><a href="Login.html">Login&nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></a></span>
     </div>
@@ -167,64 +168,71 @@
     </div>
 
 </div>
-    <footer class="footer">
-        <div class="info">
-            <div class="info-1">
-               <h4>POLICY INFO</h4>
-               <p>Privacy Policy<br/>
-                 Terms of Sale<br/>
-                 Terms of Use<br/>
-                 Report Abuse & Takedown Policy</p>
-            </div>
-
-            <div class="info-2">
-             <h4>COMPANY</h4>
-             <p>About Us<br/>
-                 Core Values<br/>
-                 Careers<br/>
-                 Blog<br/>
-                 Sitemap</p>
-            </div>
-
-            <div class="info-3">
-             <h4>SNAPDEAL BUSINESS
-             </h4>
-             <p>Shopping App<br/>
-                 Sell on Shop Stop<br/>
-                 Advertise on Shop Stop<br/>
-                 Media Enquiries<br/>
-                 Be an Affiliate</p>
-            </div>
-
-            <div class="info-4">
-             <h4>NEED HELP ?</h4>
-             <p>FAQ<br/>
-                 Contact Us<br/>
-                 Online Shopping</p>
-            </div>
-
-            <div class="info-5">
-             <h4>SUBSCRIBE</h4>
-             <input type="email" placeholder="Enter the Email"><br/>
-             <button>SUBSCRIBE</button>
-             <p></p>
-            </div>
+<footer class="footer" id="foo">
+    <div class="info">
+        <div class="info-1">
+           <h4>POLICY INFO</h4>
+           <p>Privacy Policy<br/>
+             Terms of Sale<br/>
+             Terms of Use<br/>
+             Report Abuse & Takedown Policy</p>
         </div>
-        <hr>
-        <div class="icons">
-            <h4>CONNECT WITH US</h4>
-            <a class="media" href="#"><ion-icon class="pad f" name="logo-facebook"></ion-icon></a>
-            <a class="media" href="#"><ion-icon class="pad g" name="logo-google"></ion-icon></a>
-            <a class="media" href="#"><ion-icon class="pad in" name="logo-instagram"></ion-icon></a>
-            <a class="media" href="#"><ion-icon class="pad t" name="logo-twitter"></ion-icon></a>
-            <a class="media" href="#"><ion-icon class="pad y" name="logo-youtube"></ion-icon></a>
+
+        <div class="info-2">
+         <h4>COMPANY</h4>
+         <p>About Us<br/>
+             Core Values<br/>
+             Careers<br/>
+             Blog<br/>
+             Sitemap</p>
         </div>
-        <hr/>
-        <div class="copyright">
-            <p class="cpy-1">Copyright © 2020, Shop Stop Private Limited (formerly Coders Infotech Private Limited). All Rights Reserved</p>
-             <p class="cpy-2">Made with <span style="color: red; font-size:20px;">&#9829;</span> in India</p>
-         </div>
- </footer>
-    
+
+        <div class="info-3">
+         <h4>SHOP STOP BUSINESS
+         </h4>
+         <p>Shopping App<br/>
+             Sell on Shop Stop<br/>
+             Advertise on Shop Stop<br/>
+             Media Enquiries<br/>
+             Be an Affiliate</p>
+        </div>
+
+        <div class="info-4">
+         <h4>NEED HELP ?</h4>
+         <p>FAQ<br/>
+             Contact Us<br/>
+             Online Shopping</p>
+        </div>
+
+        <div class="info-5">
+         <h4>SUBSCRIBE</h4>
+         <input type="email" placeholder="Enter the Email"><br/>
+         <button>SUBSCRIBE</button>
+         <p></p>
+        </div>
+    </div>
+    <hr>
+    <div class="icons">
+        <h4>CONNECT WITH US</h4>
+        <a class="media" href="#"><ion-icon class="pad f md hydrated" name="logo-facebook" role="img" aria-label="logo facebook"></ion-icon></a>
+        <a class="media" href="#"><ion-icon class="pad g"  name="logo-google"></ion-icon></a>
+        <a class="media" href="#"><ion-icon class="pad in" name="logo-instagram"></ion-icon></a>
+        <a class="media" href="#"><ion-icon class="pad t"  name="logo-twitter"></ion-icon></a>
+        <a class="media" href="#"><ion-icon class="pad y"  name="logo-youtube"></ion-icon></a>
+    </div>
+    <hr/>
+    <div class="copyright">
+        <p class="cpy-1">Copyright © 2020, Shop Stop Private Limited (formerly Coderas Infotech Private Limited). All Rights Reserved</p>
+         <p class="cpy-2">Made with <span style="color: red; font-size:20px;">&#9829;</span> in India</p>
+     </div>
+</footer>
+ <script>
+ function cart()
+ {
+     alert("Cart is empty")
+ }
+ 
+</script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>

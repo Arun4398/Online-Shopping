@@ -11,22 +11,22 @@
 </head>
 <body>
     <div class="Top-bar">
-        <span>India's Fastest Online Shopping Destination<span>
+            <span><abbr title="Home" style="text-decoration: none;"><a href="index.html" style="text-decoration: none; color: white;">India's Fastest Online Shopping Destination</a></abbr><span>
         <nav>
         <ul class="Top-item">
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Gift Cards</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Help Center</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Sell On Shop Stop</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Download App</a></li>     
+            <li class="Top-bar-list"><a id="Top-bar-link" href="#foo">Help Center</a></li>
+            <li class="Top-bar-list"><a id="Top-bar-link" href="Products.html">Sell On Shop Stop</a></li>
+            <li class="Top-bar-list"><a id="Top-bar-link" href="#down">Download App</a></li>     
         </ul>   
         </nav>
     </div>    
-    <div class="nav-bar">
-         <img id="logoimg"src="images/Logo.jpg" height="50px" width="50px">
+   <div class="nav-bar">
+         <img id="logoimg"src="images/Logo.jpg">
          <span id="logoname"><a href="index.html">Shop Stop</a></span>
          <span id="search-input"><input type="text" placeholder="Search product & brands"></span>
          <span id="Searchbtn"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Search</a></span>
-         <span id="cart">Cart&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+         <span id="cart" onclick="cart()">Cart&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
          <span id="signin"><a href="Signup.html">Sign Up&nbsp;<i class="fa fa-user-plus" aria-hidden="true"></i></a></span>
          <span id="Login"><a href="Login.html">Login&nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i></a></span>
     </div>
@@ -48,8 +48,7 @@
           
        </ul>   
     </div> 
-    <div class="scrl">   
-    </div>       
+    <div class="scrl"></div>       
     <div class="img-nav">
         <ul>
             <li><a href="">David Miller Watches</a></li>
@@ -58,37 +57,60 @@
             <li><a href="">Mask & Sanitizer</a></li>
         </ul>  
         <hr id="HR">  
+        
     </div>
-    <div class="right-bar">
-        <div id="bar-img" ><img src="images/Maps.png" alt="" ></div>   
-        <div id="bar-text">Enter Your Pincode to Check availabitiy</div>
-        <input type="number" placeholder="Enter Pincode">
-        <button type="submit">Sumbit</button>
+    <div id="right-bar2">
+        <div id="bar-img2" ><img src="images/shoppers-stop-new (1).jpg" alt="" ></div>   
+        <div id="bar-text2">Login to your<br/>Shop stop account</div>
+        <div id="ab"><a id="ab1" href="Login.html">Login</a></div>
+        <div id="par"><p>NewUser?<a href="signup.html">Register</a></p></div>
+    
+        <button onclick="change2()">Next</button>
+
     </div>
-    <div class="product-title">TRENDING PRODUCTS
+    <div id="right-bar1">
+
+        <div id="bar-img1" ><img src="images/Maps.png" alt="" ></div> 
+
+        <div id="bar-text">Enter Your Pincode to Get Trending Products</div>
+
+         <form onsubmit="return color()">
+
+         <input type="text" id="pincode" placeholder="Enter the pincode">
+         
+         <span id="sp"></span>
+         
+         <input id="sub" type="submit">
+
+         </form>
+        <button id="next"onclick="change1()">Next</button>
+    </div>
+  
+    <div id="product-title">TRENDING PRODUCTS
     </div>    
 
-    <div  class="products">
-            <div  class="product1">
-             <img src="images/pro1.png" width="200" height="200"><br/><br/>
-             <span><a style="text-decoration:none; color: black;" href="Payment.html">SUKAU Fancy Color Changing <br/>LED Mushroom Night Light</span><br/><br/>
-             <span style="font-size:20px;">&#8377 &nbsp; 499 &nbsp;<del><small><small>999</small></small></del>&nbsp;save 50%</span></a>
-            </div>
-            <div  class="product2">
-                <img src="images/pro2.png" width="200" height="200"><br/><br/>
-                <span><a style="text-decoration:none; color: black;" href="Payment.html">Naraniya Creation Individual<br/> Photo Frames Wall Hanging</span><br/><br/>
-                <span style="font-size:20px;">&#8377 &nbsp; 299 &nbsp;<del><small><small>500</small></small></del>&nbsp;save 40%</span></a>
-            </div>
-            <div  class="product3">
-                <img src="images/pro3.png" width="200" height="200"><br/><br/>
-                <span><a style="text-decoration:none; color: black;" href="Payment.html">TRUENOW VENTURES PRIVATE LIMITED <br/>Glass Tea and Coffee Cup </span><br/><br/>
-                <span style="font-size:20px;">&#8377 &nbsp; 199 &nbsp;<del><small><small>405</small></small></del>&nbsp;save 50%</span></a>
-            </div>
-            <div  class="product4">
-                <img src="images/pro4.png" width="200" height="200"><br/><br/>
-                <span><a style="text-decoration:none; color: black;" href="Payment.html">Floralbay Red Roses Bouquet<br/> Fresh Flowers In Cellophane<br/> Wrapping </span><br/><br/>
-                <span style="font-size:20px;">&#8377 &nbsp; 99 &nbsp;<del><small><small>300</small></small></del>&nbsp;save 70%</span></a>
-            </div>       
+    <div  id="products">
+        <div  class="product1">
+            <img src="images/5.png" width="200" height="200"><br/><br/>
+            <span><a style="text-decoration:none; color: black;" href="Payment.html">Square Unisex Blue Cut <br/>Spectacles With Anti-glare<BR/> for Eye Protection </span><br/><br/>
+            <span style="font-size:20px;">&#8377 &nbsp; 799 &nbsp;<del><small><small>2,999</small></small></del>&nbsp;save 73%</span></a>
+           </div>
+           <div  class="product2">
+               <img src="images/6.png" width="200" height="200"><br/><br/>
+               <span><a style="text-decoration:none; color: black;" href="Payment.html">GOYAL'S Fleece 140 <br/>TC Blanket <br/>(Single_Multicolour)
+               </span><br/><br/>
+               <span style="font-size:20px;">&#8377 &nbsp; 749 &nbsp;<del><small><small>1700</small></small></del>&nbsp;save 57%</span></a>
+           </div>
+           <div  class="product3">
+               <img src="images/7.png" width="200" height="200"><br/><br/>
+               <span><a style="text-decoration:none; color: black;" href="Payment.html">AmazonBasics AA Performance<br/>Alkaline Non-Rechargeable</span><br/><br/>
+               <span style="font-size:20px;">&#8377 &nbsp; 215 &nbsp;<del><small><small>445</small></small></del>&nbsp;save 52%</span></a>
+           </div>
+           <div  class="product4">
+               <img src="images/8.png" width="200" height="200"><br/><br/>
+               <span><a style="text-decoration:none; color: black;" href="Payment.html">D-Link DIR-615 Wireless-<br/>N300 Router <br/>(Black, Not a Modem)</span><br/><br/>
+               <span style="font-size:20px;">&#8377 &nbsp; 1999 &nbsp;<del><small><small>1800</small></small></del>&nbsp;save 37%</span></a>
+           </div> 
     </div>
     <div class="adv">
         <div class="adv-i">
@@ -99,7 +121,8 @@
         </div>
     </div>    
 </div>
-    <div class="app-page">
+<div id="down"></div>
+    <div class="app-page" >
          <img id="mob" src="images/specs-front-back-WHITE.png" alt="">
          <img id="green" src="images/pngwave.png" alt="" width="300px">
 
@@ -113,7 +136,7 @@
             </p>
         </div>
      </div>  
-     <footer class="footer">
+     <footer class="footer" id="foo">
            <div class="info">
                <div class="info-1">
                   <h4>POLICY INFO</h4>
@@ -133,7 +156,7 @@
                </div>
 
                <div class="info-3">
-                <h4>SNAPDEAL BUSINESS
+                <h4>SHOP STOP BUSINESS
                 </h4>
                 <p>Shopping App<br/>
                     Sell on Shop Stop<br/>
@@ -158,13 +181,13 @@
            </div>
            <hr>
            <div class="icons">
-               <h4>CONNECT WITH US</h4>
-               <a class="media" href="#"><ion-icon class="pad f" name="logo-facebook"></ion-icon></a>
-               <a class="media" href="#"><ion-icon class="pad g" name="logo-google"></ion-icon></a>
-               <a class="media" href="#"><ion-icon class="pad in" name="logo-instagram"></ion-icon></a>
-               <a class="media" href="#"><ion-icon class="pad t" name="logo-twitter"></ion-icon></a>
-               <a class="media" href="#"><ion-icon class="pad y" name="logo-youtube"></ion-icon></a>
-           </div>
+            <h4>CONNECT WITH US</h4>
+            <a class="media" href="#"><ion-icon class="pad f" name="logo-facebook"></ion-icon></a>
+            <a class="media" href="#"><ion-icon class="pad g" name="logo-google"></ion-icon></a>
+            <a class="media" href="#"><ion-icon class="pad in" name="logo-instagram"></ion-icon></a>
+            <a class="media" href="#"><ion-icon class="pad t" name="logo-twitter"></ion-icon></a>
+            <a class="media" href="#"><ion-icon class="pad y" name="logo-youtube"></ion-icon></a>
+        </div>
            <hr/>
            <div class="copyright">
                <p class="cpy-1">Copyright © 2020, Shop Stop Private Limited (formerly Coderas Infotech Private Limited). All Rights Reserved</p>
@@ -172,6 +195,69 @@
             </div>
     </footer>
     
+    <script>
+        function change1()
+        {
+           
+            document.getElementById("right-bar2").style.cssText=" transform:translateX(0px); transition-duration:2s; z-index:9999;"
+        
+            document.getElementById("right-bar1").style.cssText=" transform:translateX(10px); transition-duration:2s; z-index:0000;"
+           
+        }
+        function change2()
+        {
+            document.getElementById("right-bar1").style.cssText=" transform:translateX(0px); transition-duration:2s; z-index:9999;"
+        
+            document.getElementById("right-bar2").style.cssText=" transform:translateX(10px); transition-duration:2s; z-index:0000;"
+        }
+
+        function pinc()
+        {
+            var pincode=document.getElementById("pincode");
+
+            var v =pincode.value();
+        
+            console.log(v);
+        }
+
+        function color()
+        {
+            var pass = document.getElementById("pincode").value;
+            console.log(pass)
+
+            var reg = /^[0-9]\d{5}$/
+       if(pass == "")
+       {
+                document.getElementById("sp").textContent="it is empty"
+                document.getElementById("sp").style.display="block";
+                document.getElementById("next").style.top="367px";
+                return false;
+       }
+
+          if(!pass.match(reg))
+            {
+                document.getElementById("sp").textContent=" Enter Correct code"
+                document.getElementById("sp").style.display="block";
+                document.getElementById("next").style.top="367px";
+                document.getElementById("products").style.display="none";
+               
+                return false;
+            }
+            else
+            {
+                document.getElementById("sp").style.display="none";
+                document.getElementById("next").style.top="348px";  
+                document.getElementById("product-title").textContent="TRENDING PRODUCTS @"+pass
+                document.getElementById("products").style.display="flex";
+                return false;
+            } 
+        } 
+       function cart()
+       {
+           alert("Cart is empty")
+       }
+        </script>
 </body>
+
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </html>

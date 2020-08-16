@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp | shop Stop</title>
-    <link rel="icon" href="images/Logo.jpg">
-    <link rel="stylesheet" href="css/signup.css">
+    <title>Login | shop Stop</title>
+    <link rel="stylesheet" href="css/Login.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,64 +14,56 @@
         <ul class="Top-item">
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Gift Cards</a></li>
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Help Center</a></li>
-            <li class="Top-bar-list"><a id="Top-bar-link" href="">Sell On Shop Stop</a></li>
+            <li class="Top-bar-list"><a id="Top-bar-link" href="Products.html">Sell On Shop Stop</a></li>
             <li class="Top-bar-list"><a id="Top-bar-link" href="">Download App</a></li>     
         </ul>   
         </nav>
     </div>    
 <div id="login-box">
-	  <div class="left-box">
-        <h1>SignUp</h1>
-        <form action="login.html" onsubmit="return valid()">
+	<div class="image"><img src="images/Offer_2366_637104927504713450.png" alt=""></div>
+	<div class="left-box">
+   
+        <h1>LOGIN</h1>
+        <form action="index.html" onsubmit="return valid()">
         <input type="text" placeholder="Username" id="text">
         <input type="email"  placeholder="Email" id="text1">
         <input id="pass" type="Password"  placeholder="Password">
-        <input id="copass" type="Password"  placeholder="Confirm Password">
-        <input id="link" type="submit" value="SignUp">
-    </form>
-</div>
-<div class="right-box">
-    <span class="signinwith">Sign in with<br/>Social Network
-    </span>
-    <input class="facebook" type="submit" value="Log in with Facebook">
-    <input class="twitter" type="submit" value="Log in with Twitter">
-    <input class="google"   type="submit" value="Log in with Google+"> 
-    
-    </div>
+        <input id="link" type="submit" value="Login">
+
+        </form>
+	</div>
 </div>
 </body>
 <script>
-
-    function valid()
-    {
+    function valid(){
         var user = document.getElementById("text").value;
         var ema = document.getElementById("text1").value;
-
-        var res=document.getElementById("pass").value;
-        var res1=document.getElementById("copass").value;
-
+        
         if(user=="" || ema=="")
         {
             alert("Username OR Email is empty");
             return false;
         }
-        else
-        {
-            if(res == res1)
-            {
-                return true;
-            }
-            else
-           {
-                alert("Password & confirm Password is not matching");
-                return false;
-           }
+        else{
             
+            return true;
         }
-       
-
-
     }
-
 </script>
+<!--<script>
+    function login()
+   {
+    var user= document.getElementById("text").value;
+
+    if(user=="")
+    {
+        alert("Username & Email is empty")
+        return false;
+    }
+    else
+    {
+         return true;
+    }
+  }
+</script>-->
 </html>
